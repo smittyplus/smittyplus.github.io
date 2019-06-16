@@ -1,0 +1,17 @@
+
+
+.box img {
+    -webkit-filter: brightness(0.6);
+    filter: brightness(0.7);
+  }
+  
+  .Slack div{
+    color: #800080
+  }
+  
+  .btn-warning {
+    background-color: #800080;
+    outline-color: #800080;
+    text: white;
+  }
+  
