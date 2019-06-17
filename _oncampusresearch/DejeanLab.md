@@ -4,7 +4,7 @@ subtitle: Metabolic biochemistry
 alum: micah_olivas
 img_url: '/images/DukeCampus.jpg'
 layout: on_campus_research
-info_url: 'dejeanlabwebsite.test'
+info_url: 'dejeanlabwebsite.example'
 ---
 ## Overview
 Our lab investigates metabolic biochemistry blah blah blah
