@@ -1,194 +1,126 @@
-<!doctype html>
-<!-- Created by some Smitties -->
+---
+layout: home
+title: Smitty+
+---
 
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Smitty Plus</title>
-
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="./css/GeneralStyling.css" type="text/css">
-  <link rel="stylesheet" href="./css/main.scss" type="text/css">
-
-</head>
-<!-- {% include head.html %} -->
-
-<body>
-  <div class="container">
-
-    <!--Top Navigation Bar-->
-    <header class="navbar-inverse" role="banner">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="./images/SFHC Logo.png" width="30" height="30"
-            class="d-inline-block align-top" alt="">
-          Smitty+
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/fellowships/FlwDir.html">Fellowship Directory</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/research/On-CampusResearch.html">On-Campus Research</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/internships/Internships.html">Internships</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"></a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-    </header>
-
-    <!---------------------->
-    <!---Top of Jumbotron--->
-    <div class="jumbotron">
-      <h1 class="display-4">Smitty+</h1>
-      <p class="lead">World-class research. Better academics. Papa Johns. <br /> The name speaks for itself. </p>
-    </div>
-    <!---Bottom of Jumbotron--->
-    <!------------------------->
-
-    <!------------------------->
-    <!---Carousel Top---------->
-    <main role="main">
-      <div id="myCarousel" class="carousel slide box my-3 rounded-lg" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner rounded-lg">
-          <div class="carousel-item active rounded-lg">
-            <img src="./images/smittcamphouse.jpg" class="d-block w-100 rounded-lg" alt="Campus">
-            <div class="container">
-              <div class="carousel-caption text-left">
-                <h1>Smittcamp: where academics meets excellence.</h1>
-                <p>Expand your horizons, apply today for fellowships.</p>
-                <p><a class="btn btn-lg btn-primary" href="FlwDir.html" role="button">Apply today</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item rounded-lg">
-            <img src="./images/researchlab.jpg" class="d-block w-100 rounded-lg" alt="Lab">
-            <div class="container">
-              <div class="carousel-caption text-center">
-                <h1>Looking for On-Campus research opportunities? Look no further.</h1>
-                <p><a class="btn btn-lg btn-primary" href="On-CampusResearch.html" role="button">Browse Labs</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item rounded-lg">
-            <img src="./images/CookiePic.jpg" class="d-block w-100 rounded-lg" alt="Students">
-            <div class="container">
-              <div class="carousel-caption text-right">
-                <h1>Not a fan of research? Not a problem; check out these internships.</h1>
-                <p><a class="btn btn-lg btn-primary" href="internships.html" role="button">Browse Internships</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-      <!---Bottom of Carousel--->
-      <!------------------------>
-
-      <!-- Marketing messaging and featurettes
-	    ================================================== -->
-      <!-- Wrap the rest of the page in another container to center all the content. -->
+{% include head.html %}
 
 
-      <!-- START THE FEATURETTES -->
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Striving for<span class="text-muted"> excellence.</span></h2>
-          <p class="lead">Whether in a nanobiology lab or an internship at Capitol Hill, Smittcamp encourages all
-            students to venture out beyond their comfort zone and tap into a rich marketplace of ideas.</p>
-        </div>
-        <div class="col-md-5">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading">Get a jumpstart on your <span class="text-muted">career.</span></h2>
-          <p class="lead">Fellowships provide an excellent way to gain valuable skills, receive phenomenal training, and
-            prepare students for successful careers in their field.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <img src="./images/slack-logo-icon.png" width="60" height="60" class="d-block-inline row mx-1">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Continue the conversation on<span class="text-muted"> Slack.</span></h2>
-        </div>
-        <div class="col-md-7">
-          <p class="lead">
-            It's no secret Smittcampers do some amazing things, and you will too! Slack is an excellent resource to get
-            connected with alumni
-            <button type="button" class="btn btn-Slack text-dark btn-sm">Join Now</button>
-          </p>
-        </div>
-        <div class="col-md-5">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-      <!-- /END OF THE FEATURETTES -->
-      <!-- HTML to write -->
+<div class="container">
+  {% include navbar.html %}
 
 
-  </div><!-- /.container -->
+  <!---------------------->
+  <!---Top of Jumbotron--->
+  <div class="jumbotron">
+    <h1 class="display-4">Smitty+</h1>
+    <p class="lead">World-class research. Better academics. Papa Johns. <br /> The name speaks for itself. </p>
   </div>
+  <!---Bottom of Jumbotron--->
+  <!------------------------->
 
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-right"><a href="#">Back to top</a></p>
-    <p> &copy; 2019 &middot; Designed by Smitties, for Smitties</p>
-  </footer>
+  <!------------------------->
+  <!---Carousel Top---------->
+  <main role="main">
+    <div id="myCarousel" class="carousel slide box my-3 rounded-lg" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner rounded-lg">
+        <div class="carousel-item active rounded-lg">
+          <img src="./images/hml.png" class="d-block w-100 rounded-lg" alt="Campus">
+          <div class="container">
+            <div class="carousel-caption text-left">
+              <h1>Smittcamp: where academics meets excellence.</h1>
+              <p>Expand your horizons, apply today for fellowships.</p>
+              <p><a class="btn btn-lg btn-primary" href="FlwDir.html" role="button">Apply today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item rounded-lg">
+          <img src="./images/researchlab.jpg" class="d-block w-100 rounded-lg" alt="Lab">
+          <div class="container">
+            <div class="carousel-caption text-center">
+              <h1>Looking for On-Campus research opportunities? Look no further.</h1>
+              <p><a class="btn btn-lg btn-primary" href="On-CampusResearch.html" role="button">Browse Labs</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item rounded-lg">
+          <img src="./images/CookiePic.jpg" class="d-block w-100 rounded-lg" alt="Students">
+          <div class="container">
+            <div class="carousel-caption text-right">
+              <h1>Not a fan of research? Not a problem; check out these internships.</h1>
+              <p><a class="btn btn-lg btn-primary" href="internships.html" role="button">Browse Internships</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!---Bottom of Carousel--->
+    <!------------------------>
 
+    <!-- Marketing messaging and featurettes
+	    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Striving for<span class="text-muted"> excellence.</span></h2>
+        <p class="lead">Whether in a nanobiology lab or an internship at Capitol Hill, Smittcamp encourages all
+          students to venture out beyond their comfort zone and tap into a rich marketplace of ideas.</p>
+      </div>
+      <div class="col-md-5">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Get a jumpstart on your <span class="text-muted">career.</span></h2>
+        <p class="lead">Fellowships provide an excellent way to gain valuable skills, receive phenomenal training, and
+          prepare students for successful careers in their field.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <img src="./images/slack-logo-icon.png" width="60" height="60" class="d-block-inline row mx-1">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Continue the conversation on<span class="text-muted"> Slack.</span></h2>
+      </div>
+      <div class="col-md-7">
+        <p class="lead">
+          It's no secret Smittcampers do some amazing things, and you will too! Slack is an excellent resource to get
+          connected with alumni
+          <button type="button" class="btn btn-Slack text-dark btn-sm">Join Now</button>
+        </p>
+      </div>
+      <div class="col-md-5">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+    <!-- /END OF THE FEATURETTES -->
+    <!-- HTML to write -->
   </main>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-  </script>
-</body>
 
-</html>
+</div><!-- /.container -->
