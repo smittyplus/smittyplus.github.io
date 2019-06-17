@@ -2,7 +2,7 @@
 title: Stanford SSRP
 subtitle: Spend summer in bay, neet
 alum: micah_olivas
-img_url: '/images/stanfordcampus.jpg'
+img_url: '/images/dukecampus.jpg'
 layout: fellowship
 info_url: 'https://nyureu.org'
 ---
