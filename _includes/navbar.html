@@ -25,7 +25,14 @@
               </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/research/On-CampusResearch.html">On-Campus Research</a>
+            <a class="nav-link" href="/research/On-CampusResearch.html">
+              On-Campus Research
+            </a>
+            <div class="dropdown-menu">
+              {% for oncresearch in site.on_campus_research %}
+                <a class="dropdown-item" href="{{ on_campus_research.url }}">{{ on_campus_research.title }}</a>
+              {% endfor %}
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/internships/Internships.html">Internships</a>
