@@ -13,12 +13,12 @@
     </div>
     <H2 class="text-muted py-2">{{ page.subtitle }}</H2>
     {{ page.content }}
-      {% for alum in site.alumni %}
-      {% if alum.path contains page.alum %}
+    {% for alum in site.alumni %}
+    {% if alum.path contains page.alum %}
     <h4 id="list-item-4">SFHC Alumni</h4>
     <div class="container py-3">
       <div class="card w-75" id="alumnus">
-        <div class="row ">
+        <div class="row">
           <div class="col-md-8 px-3">
             <div class="card-block px-3">
               <h4 class="card-title">{{ alum.name }}</h4>
