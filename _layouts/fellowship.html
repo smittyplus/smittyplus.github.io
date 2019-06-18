@@ -20,8 +20,7 @@
       <div class="card shadow" style="width: 18rem;">
         <img src="{{ alum.img_url }}" class="card-img-top" alt="{{ alum.name }}">
         <div class="card-body">
-          <h5 class="card-title">{{ alum.first_name }} {{ alum.last_name }}</h5>
-          <h5 class="card-title muted-text">{{ alum.class }}</h5>
+          <h5 class="card-title">{{ alum.first_name }} {{ alum.last_name }} '{{ alum.class }}</h5>
           <h6 class="card-text muted-text"> Fellow in {{ alum.fellowship_year }} </h6>
           <p class="card-text">{{ alum.flw_1_bio }}</p>
           <a href="#" class="btn btn-primary"> Contact {{ alum.first_name }} </a>
