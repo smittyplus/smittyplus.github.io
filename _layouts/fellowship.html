@@ -32,6 +32,15 @@
           </div>
         </div>
       </div>
+      <div class="card shadow" style="width: 18rem;">
+        <img src="{{ alum.img_url }}" class="card-img-top" alt="{{ alum.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ alum.name }}</h5>
+          <h6 class="card-text muted-text"> C/O {{ alum.class }} </h6>
+          <p class="card-text">{{ alum.flw_bio }}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
     </div>
     {% endif %}
     {% endfor %}
