@@ -17,7 +17,7 @@
     {% if alum.path contains page.alum %}
     <h4 id="list-item-4">SFHC Alumni</h4>
     <div class="container py-3">
-      <div class="card w-50 h-auto shadow" style="width: 18rem;">
+      <div class="card shadow" style="width: 18rem;">
         <img src="{{ alum.img_url }}" width="50" class="card-img-top" alt="{{ alum.name }}">
         <div class="card-body">
           <h5 class="card-title">{{ alum.first_name }} {{ alum.last_name }} '{{ alum.class }}</h5>
