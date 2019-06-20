@@ -11,7 +11,7 @@
         <h1 class="text_left font-weight-bold">{{ page.title }}</h1>
       </div>
     </div>
-    <H2 class="text-muted py-2">TEST {{ page.subtitle }}</H2>
+    <H2 class="text-muted py-2">{{ page.subtitle }}</H2>
     {{ page.content }}
     {% for alum in site.alumni %}
     {% if alum.path contains page.alum %}
