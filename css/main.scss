@@ -2,3 +2,12 @@
 .navbar-nav li:hover>.dropdown-menu {
     display: block;
 }
+
+.flex-row {
+    // overflow-x: scroll;
+    // overflow-y: visible;
+    // white-space: nowrap;
+    // padding: 1rem;
+    // width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
