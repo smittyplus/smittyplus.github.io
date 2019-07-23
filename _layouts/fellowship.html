@@ -13,28 +13,26 @@
     </div>
     <H2 class="text-muted py-2">{{ page.subtitle }}</H2>
     {{ page.content }}
-      {% for alum in site.alumni %}
-      {% if alum.path contains page.alum %}
     <h4 id="list-item-4">SFHC Alumni</h4>
-    <div class="container py-3">
-      <div class="card w-75" id="alumnus">
-        <div class="row ">
-          <div class="col-md-8 px-3">
-            <div class="card-block px-3">
-              <h4 class="card-title">{{ alum.name }}</h4>
-              <h5 class="card-text muted-text"> C/O {{ alum.class }} </h5>
-              <p class="card-text">{{ alum.bio }}</p>
-              <a href="#" class="btn btn-primary">Read More</a>
+    <div class="container-fluid mt-4">
+      <div class="row py-3 flex-nowrap" style="overflow-x: scroll; -webkit-overflow-scrolling: touch">
+        {% for alum in site.data.alumni %}
+        {% if "Y" %}
+        <div class="col-auto mb-3">
+          <div class="card shadow" style="width: 18rem;">
+            <img src="/images/headshots/{{ alum.name | downcase | replace: " ", ""}}.jpg" width="50" class="card-img-top" alt="{{ alum.name }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ alum.name }} '{{ alum.grad_year | modulo: 100}}</h5>
+              <h6 class="card-text muted-text"> Fellow in {{ alum.fellowship_year }} </h6>
+              <p class="card-text">{{ alum.flw_1_bio }}</p>
+              <a href="#" class="btn btn-primary"> Contact {{ alum.first_name }} </a>
             </div>
           </div>
-          <div class="col-md-4">
-            <img src="{{ alum.img_url }}" class="w-75 rounded-circle">
-          </div>
         </div>
+        {% endif %}
+        {% endfor %}
       </div>
     </div>
-    {% endif %}
-    {% endfor %}
     <h4 id="list-item-5">Website</h4>
     <p>
       For more info visit <a href="{{ page.info_url }}">https://www.nyureu.org/</a>
