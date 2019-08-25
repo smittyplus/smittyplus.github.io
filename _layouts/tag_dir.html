@@ -1,0 +1,57 @@
+---
+
+---
+<!doctype html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+  <div class="container">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item"><a href="/directories/fellowships">Fellowships</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Biology Fellowships</li>
+    </nav>
+    <h3>
+      {{ page.title }}
+      <small class="text-muted">{{ page.subtitle }}</small>
+    </h3>
+
+    <ul class="list-group">
+      {% if page.categories contains "fellowships" %}
+              {% for fship in site.fellowships %}
+      {% if fship.tags contains page.tag %}
+      <li class="list-group-item">
+        <a href="{{ fship.url }}">{{ fship.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
+      {% elsif page.categories contains "internships" %}
+      {% for fship in site.internships %}
+      {% if fship.tags contains page.tag %}
+      <li class="list-group-item">
+        <a href="{{ fship.url }}">{{ fship.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %} 
+      {% elsif page.categories contains "research" %}
+      {% for fship in site.oncampusresearch %}
+      {% if fship.tags contains page.tag %}
+      <li class="list-group-item">
+        <a href="{{ fship.url }}">{{ fship.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}       
+      {% endif %}
+
+    </ul>
+
+    <hr class="featurette-divider">
+
+    <!-- FOOTER -->
+{% include footer.html %}
+</body>
+
+</html>

@@ -1,4 +1,5 @@
 ---
+
 ---
 <!doctype html>
 <html lang="en">
@@ -27,14 +28,11 @@
 
     <h3>
       Biology
-      <small class="text-muted">Life sciences research opportunities</<small>
+      <small class="text-muted">Life sciences research opportunities</small>
     </h3>
 
     <ul class="list-group">
-      <!-- <li class="list-group-item">
-            <a href="DukeSURPH.html">Duke SURPH</a>
-          </li> -->
-      {% for fship in fellowships %}
+      {% for fship in site.fellowships %}
       {% if fship.tags contains "biology" %}
       <li class="list-group-item">
         <a href="{{ fship.url }}">{{ fship.title }}</a>
