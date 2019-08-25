@@ -1,9 +1,9 @@
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       {%- assign crumbs = page.url | split: '/' -%}
-      {% assign total = '' %}
+      {% assign total = site.url %}
       {% for crumb in crumbs %}
-      {% assign total = total | append: crumb %}
+      {% assign total = total | append: crumb | append: '/' %}
       {% if forloop.first %}
         
       <li class="breadcrumb-item"><a href="/">Home</a></li>
