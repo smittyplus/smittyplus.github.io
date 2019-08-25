@@ -1,6 +1,6 @@
 ---
 title: Stanford SSRP
-subtitle: Spend summer in bay, neet
+subtitle: Study Biosciences in 
 alum: micah_olivas
 img_url: '/images/stanford_campus.jpg'
 layout: fellowship
