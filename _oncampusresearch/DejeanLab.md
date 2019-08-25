@@ -3,7 +3,7 @@ title: Laurent Dejean, PhD
 subtitle: Metabolic biochemistry
 alum: micah_olivas
 img_url: '/images/DukeCampus.jpg'
-layout: on_campus_research
+layout: fellowship
 info_url: 'dejeanlabwebsite.example'
 tags: [biology, chemistry]
 ---
