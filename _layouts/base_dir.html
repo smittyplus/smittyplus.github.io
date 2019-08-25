@@ -1,8 +1,4 @@
 ---
-includetags:
-- Biology
-- Chemistry
-- Engineering
 ---
 {% assign tags = "biology,chemistry,engineering" | split: "," %}
 <!DOCTYPE html>
@@ -25,20 +21,20 @@ includetags:
 					<span class="badge badge-primary badge-pill">
 
 						{% assign mycount = 0 %}
-						{% case page.dirtype %}
-						{% when "Fellowships" %}
+						{% case page.collection %}
+						{% when "fellowships" %}
 						{% for entry in site.fellowships %}
 						{% if entry.tags contains tag %}
 						{% assign mycount = mycount | plus: 1 %}
 						{% endif %}
 						{% endfor %}
-						{% when 'Internships' %}
+						{% when 'internships' %}
 						{% for entry in site.internships %}
 						{% if entry.tags contains tag %}
 						{% assign mycount = mycount | plus: 1 %}
 						{% endif %}
 						{% endfor %}
-						{% when 'Research' %}
+						{% when 'oncampusresearch' %}
 						{% for entry in site.oncampusresearch %}
 						{% if entry.tags contains tag %}
 						{% assign mycount = mycount | plus: 1 %}
@@ -52,7 +48,6 @@ includetags:
 				{% endfor %}
 			</div>
 		</div>
-
 
 		<hr class="featurette-divider">
 
