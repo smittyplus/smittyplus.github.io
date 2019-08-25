@@ -1,0 +1,64 @@
+---
+includetags:
+- Business
+- History
+- Political Science
+---
+{% assign tags = "biology,chemistry,engineering" | split: "," %}
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+	<div class="container">
+		{% include breadcrumbs.html %}
+
+		<!--Annotated List Group-->
+		<div class="col-mb-12">
+			<div class="list-group">
+				<a class="list-group-item text-white list-group-item-action active">Disciplines</a>
+				{% for tag in tags %}
+				<a href="./{{page.dirtype | downcase}}/{{ tag | downcase }}.html"
+					class="list-group-item list-group-item-action">
+					{{ tag | capitalize}}
+					<span class="badge badge-primary badge-pill">
+
+						{% assign mycount = 0 %}
+						{% case page.dirtype %}
+						{% when "Fellowships" %}
+						{% for entry in site.fellowships %}
+						{% if entry.tags contains tag %}
+						{% assign mycount = mycount | plus: 1 %}
+						{% endif %}
+						{% endfor %}
+						{% when 'Internships' %}
+						{% for entry in site.internships %}
+						{% if entry.tags contains tag %}
+						{% assign mycount = mycount | plus: 1 %}
+						{% endif %}
+						{% endfor %}
+						{% when 'Research' %}
+						{% for entry in site.oncampusresearch %}
+						{% if entry.tags contains tag %}
+						{% assign mycount = mycount | plus: 1 %}
+						{% endif %}
+						{% endfor %}
+						{% else %}
+						{% assign mycount = 'N/A' %}
+						{% endcase %}
+						{{ mycount }}
+					</span></a>
+				{% endfor %}
+			</div>
+		</div>
+
+
+		<hr class="featurette-divider">
+
+		<!-- FOOTER -->
+		{% include footer.html %}
+	</div>
+</body>
+
+</html>
