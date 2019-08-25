@@ -1,56 +1,28 @@
 <!--Top Navigation Bar-->
 <header class="navbar-inverse" role="banner">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand"><img src="/images/SFHC Logo.png" href="/" width="30" height="30"
-        class="d-inline-block align-top" alt="">
-      Smitty+
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/directories/fellowships.html">Fellowships</a>
-          <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Fellowships
-          </a>
-          <div class="dropdown-menu">
-            {% for fship in site.fellowships %}
-            <a class="dropdown-item" href="{{ fship.url }}">{{ fship.title }}</a>
-            {% endfor %}
-          </div> -->
-        </li>
-        <li><a href="/directories/internships.html" class="nav-link">Internships</a></li>
-        <li class="nav-item">
-          <a class="nav-link" href="/directories/research.html">On-Campus Research</a>
-        </li>
-
-        <!-- <a class="nav-link dropdown-toggle" href="/directories/" id="navbarDropdown" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            On-Campus Research
-          </a> -->
-        <!-- <div class="dropdown-menu">
-            {% for oncresearch in site.oncampusresearch %}
-            <a class="dropdown-item" href="{{ oncresearch.url }}">{{ oncresearch.title }}</a>
-            {% endfor %} -->
-        <!-- </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{{ fship.url }}">Internships</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"></a>
-        </li> -->
-      </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand"><img alt="" class="d-inline-block align-top" height="30" href="/" src="/images/SFHC Logo.png" width="30">
+            Smitty+
+        </a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/fellowships/">Fellowships</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="/internships/">Internships</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/research/">On-Campus Research</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </header>
