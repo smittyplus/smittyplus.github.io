@@ -3,7 +3,8 @@
 ---
 <!doctype html>
 <html lang="en">
-
+{%- assign tag = page.path | remove: ".html" | split: "/" -%}
+{%- assign tag = tag.last -%}
 {% include head.html %}
 
 <body>
@@ -15,9 +16,9 @@
     </h3>
 
     <ul class="list-group">
-      {% if page.categories contains "fellowships" %}
+      {% if page.collection == "fellowships" %}
       {% for fship in site.fellowships %}
-      {% if fship.tags contains page.tag %}
+      {% if fship.tags contains tag %}
       <li class="list-group-item">
         <a href="{{ fship.url }}">{{ fship.title }}</a>
       </li>
