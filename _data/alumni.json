@@ -20,7 +20,7 @@
         "timestamp": "6/17/2019 18:41:00",
         "name": "Testing",
         "grad_year": 2019,
-        "undergrad_research_bio": "djghaga",
+        "undergrad_research_bio": "Terry Crews",
         "recent_headshot": "https://drive.google.com/open?id=1gSpO7oYTt-RKg3N_gwJClJLcQXntfnKE"
     },
     {
@@ -32,7 +32,7 @@
         "recent_headshot": null
     },
     {
-        "verified": "Y",
+        "verified": null,
         "timestamp": "6/17/2019 18:52:48",
         "name": "dfqa",
         "grad_year": 2345,
