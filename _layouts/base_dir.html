@@ -19,7 +19,7 @@ includetags:
 			<div class="list-group">
 				<a class="list-group-item text-white list-group-item-action active">Disciplines</a>
 				{% for tag in tags %}
-				<a href="./{{page.dirtype | downcase}}/{{ tag | downcase }}.html"
+				<a href="./{{ tag | downcase }}.html"
 					class="list-group-item list-group-item-action">
 					{{ tag | capitalize}}
 					<span class="badge badge-primary badge-pill">
