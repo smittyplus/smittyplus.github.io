@@ -40,10 +40,10 @@ collections:
     output: true
   oncampusresearch:
     output: true
-  directories:
-    output: true
   internships:
     output: true
+
+exclude: [/base.md]
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
