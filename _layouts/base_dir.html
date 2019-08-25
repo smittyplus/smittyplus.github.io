@@ -11,14 +11,16 @@ includetags:
 {% include head.html %}
 
 <body>
-	{% include breadcrumbs.html %}
+	<div class="container">
+		{% include breadcrumbs.html %}
 
 		<!--Annotated List Group-->
 		<div class="col-mb-12">
 			<div class="list-group">
 				<a class="list-group-item text-white list-group-item-action active">Disciplines</a>
 				{% for tag in tags %}
-				<a href="./{{page.dirtype | downcase}}/{{ tag | downcase }}.html" class="list-group-item list-group-item-action">
+				<a href="./{{page.dirtype | downcase}}/{{ tag | downcase }}.html"
+					class="list-group-item list-group-item-action">
 					{{ tag | capitalize}}
 					<span class="badge badge-primary badge-pill">
 
@@ -56,6 +58,7 @@ includetags:
 
 		<!-- FOOTER -->
 		{% include footer.html %}
+	</div>
 </body>
 
 </html>

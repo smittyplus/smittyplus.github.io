@@ -1,19 +1,19 @@
 <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-      {%- assign crumbs = page.url | split: '/' -%}
-      {% assign total = '' %}
-      {% for crumb in crumbs %}
-      {% assign total = total | append: crumb %}
-      {% if forloop.first %}
-        
-      <li class="breadcrumb-item"><a href="/">Home</a></li>
-      {% elsif forloop.last %}
-      <li class="breadcrumb-item active" aria-current="page">{{crumb | remove: '.html' | capitalize }}</li>
-      {% elsif crumb == "directories" %}
-        {% continue %}
-      {% else %}
-      <li class="breadcrumb-item"><a href={{ total }}>{{crumb | capitalize}}</a></li>
-      
-      {% endif %}
-      {% endfor %}
-  </nav>
+  <ol class="breadcrumb">
+    {%- assign crumbs = page.url | split: '/' -%}
+    {% assign total = site.url %}
+    {% for crumb in crumbs %}
+    {% assign total = total | append: crumb | append: '/' %}
+    {% if forloop.first %}
+
+    <li class="breadcrumb-item"><a href="/">Home</a></li>
+    {% elsif forloop.last %}
+    <li class="breadcrumb-item active" aria-current="page">{{crumb | remove: '.html' | capitalize }}</li>
+    {% elsif crumb == "directories" %}
+    {% continue %}
+    {% else %}
+    <li class="breadcrumb-item"><a href={{ total }}>{{crumb | capitalize}}</a></li>
+
+    {% endif %}
+    {% endfor %}
+</nav>
