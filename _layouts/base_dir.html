@@ -8,6 +8,19 @@
                 {%- assign tags = tags | append: entry.title | downcase | append: ',' -%}
             {%- endif -%}
         {%- endfor -%}
+
+    {% when 'internships' %}
+        {%- for entry in site.internships -%}
+            {%- if entry.layout == 'tag_dir' -%}
+                {%- assign tags = tags | append: entry.title | downcase | append: ',' -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {% when 'oncampusresearch' %}
+        {%- for entry in site.fellowships -%}
+            {%- if entry.layout == 'tag_dir' -%}
+                {%- assign tags = tags | append: entry.title | downcase | append: ',' -%}
+            {%- endif -%}
+        {%- endfor -%}
     {% else %}
 
 {% endcase %}
@@ -27,7 +40,7 @@
                 <div class="list-group">
                     <a class="list-group-item text-white list-group-item-action active">Disciplines</a>
                     {% for tag in tags %}
-                        <a class="list-group-item list-group-item-action" href="./{{ tag | downcase }}.html">
+                        <a class="list-group-item list-group-item-action" href="./{{ tag | downcase | replace: ' ', '_'}}.html">
                             {{ tag | capitalize}}
                             <span class="badge badge-primary badge-pill">
 
@@ -35,20 +48,29 @@
                                 {% case page.collection %}
                                     {% when "fellowships" %}
                                         {% for entry in site.fellowships %}
-                                            {% if entry.tags contains tag %}
-                                                {% assign mycount = mycount | plus: 1 %}
+                                            {% if entry.layout == 'fellowship' %}
+
+                                                {% if entry.tags contains tag %}
+                                                    {% assign mycount = mycount | plus: 1 %}
+                                                {% endif %}
                                             {% endif %}
                                         {% endfor %}
                                     {% when 'internships' %}
                                         {% for entry in site.internships %}
-                                            {% if entry.tags contains tag %}
-                                                {% assign mycount = mycount | plus: 1 %}
+                                            {% if entry.layout == 'fellowship' %}
+
+                                                {% if entry.tags contains tag %}
+                                                    {% assign mycount = mycount | plus: 1 %}
+                                                {% endif %}
                                             {% endif %}
                                         {% endfor %}
                                     {% when 'oncampusresearch' %}
                                         {% for entry in site.oncampusresearch %}
-                                            {% if entry.tags contains tag %}
-                                                {% assign mycount = mycount | plus: 1 %}
+                                            {% if entry.layout == 'fellowship' %}
+
+                                                {% if entry.tags contains tag %}
+                                                    {% assign mycount = mycount | plus: 1 %}
+                                                {% endif %}
                                             {% endif %}
                                         {% endfor %}
                                     {% else %}
