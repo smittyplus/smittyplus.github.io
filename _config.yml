@@ -42,6 +42,8 @@ collections:
     output: true
   internships:
     output: true
+    about:
+    output: true
 
 exclude: [/base.md]
 # Exclude from processing.
