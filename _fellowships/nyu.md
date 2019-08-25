@@ -5,9 +5,7 @@ alum: micah_olivas
 img_url: '/images/NYU.jpg'
 layout: fellowship
 info_url: 'https://nyureu.org'
-tags:
-      -biology
-      -chemistry
+tags: [biology, chemistry]
 ---
 ## Overview
 The REU program is a National Science Foundation (NSF) funded initiative that supports active research participation by undergraduate students. The REU Site in Chemical Biology at NYU offers an intensive interdisciplinary research program at the interface of chemistry and biology to the participating students. The 10-week summer program hosts roughly ten undergraduate students per year. We welcome applications from all backgrounds and levels of research experience, and we encourage applications from students from underrepresented groups in science.
