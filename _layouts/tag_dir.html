@@ -4,7 +4,7 @@
 <!doctype html>
 <html lang="en">
 {%- assign tag = page.path | remove: ".html" | split: "/" -%}
-{%- assign tag = tag.last -%}
+{%- assign tag = tag.last | replace: '_',' ' -%}
 {% include head.html %}
 
 <body>
