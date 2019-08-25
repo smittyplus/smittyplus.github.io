@@ -1,6 +1,6 @@
 ---
-title: Directory
-subtitle: THis is Directory
+title: CREST REU
+subtitle: University of Massachusetts - Boston
 alum: micah_olivas
 img_url: '/images/stanford_campus.jpg'
 layout: fellowship
