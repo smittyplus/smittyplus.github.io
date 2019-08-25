@@ -16,8 +16,8 @@
     <h4 id="list-item-4">SFHC Alumni</h4>
     <div class="container-fluid mt-4">
       <div class="row py-3 flex-nowrap" style="overflow-x: scroll; -webkit-overflow-scrolling: touch">
-        {% for alum in site.data.alumni %}
-        {% if "Y" %}
+        {% assign alums = site.data.alumni | where: "verified","Y" %}
+        {% for alum in alums %}
         <div class="col-auto mb-3">
           <div class="card shadow" style="width: 18rem;">
             <img src="/images/headshots/{{ alum.name | downcase | replace: " ", ""}}.jpg" width="50" class="card-img-top" alt="{{ alum.name }}">
@@ -29,7 +29,6 @@
             </div>
           </div>
         </div>
-        {% endif %}
         {% endfor %}
       </div>
     </div>
