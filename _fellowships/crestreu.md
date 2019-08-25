@@ -1,10 +1,13 @@
 ---
-title: CREST REU
-subtitle: Spend summer in bay, neet
+title: Directory
+subtitle: THis is Directory
 alum: micah_olivas
 img_url: '/images/stanford_campus.jpg'
 layout: fellowship
 info_url: 'http://biosciences.stanford.edu/current-students/diversity/programs-for-students/ssrp-amgen-scholars-program/'
+tags:
+      -biology
+      -environmental science
 ---
 ## Overview
 The SSRP-Amgen Scholars Program is a fully-funded research-intensive residential program that takes place on Stanford’s beautiful campus for a nine-week period. Participants are matched with a member of Stanford’s distinguished faculty and work in one of our state-of-the-art research facilities.
