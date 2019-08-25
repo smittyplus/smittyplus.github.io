@@ -8,7 +8,7 @@
         "recent_headshot": "https://drive.google.com/open?id=1gSpO7oYTt-RKg3N_gwJClJLcQXntfnKE"
     },
     {
-        "verified": null,
+        "verified": "Y",
         "timestamp": "6/17/2019 18:36:35",
         "name": "Terry Crews",
         "grad_year": 2018,
@@ -16,12 +16,12 @@
         "recent_headshot": "https://drive.google.com/open?id=1sQurCnzcmXweXa45CXF5jhJbMdG7piIm"
     },
     {
-        "verified": null,
+        "verified": "y",
         "timestamp": "6/17/2019 18:41:00",
         "name": "Testing",
         "grad_year": 2019,
         "undergrad_research_bio": "djghaga",
-        "recent_headshot": null
+        "recent_headshot": "https://drive.google.com/open?id=1gSpO7oYTt-RKg3N_gwJClJLcQXntfnKE"
     },
     {
         "verified": null,
