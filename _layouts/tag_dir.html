@@ -16,32 +16,26 @@
     </h3>
 
     <ul class="list-group">
-      {% if page.collection == "fellowships" %}
-      {% for fship in site.fellowships %}
-      {% if fship.tags contains tag %}
-      <li class="list-group-item">
-        <a href="{{ fship.url }}">{{ fship.title }}</a>
-      </li>
-      {% endif %}
-      {% endfor %}
-      {% elsif page.categories contains "internships" %}
-      {% for fship in site.internships %}
-      {% if fship.tags contains page.tag %}
-      <li class="list-group-item">
-        <a href="{{ fship.url }}">{{ fship.title }}</a>
-      </li>
-      {% endif %}
-      {% endfor %}
-      {% elsif page.categories contains "research" %}
-      {% for fship in site.oncampusresearch %}
-      {% if fship.tags contains page.tag %}
-      <li class="list-group-item">
-        <a href="{{ fship.url }}">{{ fship.title }}</a>
-      </li>
-      {% endif %}
-      {% endfor %}
-      {% endif %}
+      {%- case page.collection -%}
+        {%- when 'fellowships' -%}
+          {%- assign entries = site.fellowships | where: 'layout','fellowship' -%}
 
+          {%- when 'internships' -%}
+          {%- assign entries = site.internships | where: 'layout','fellowship' -%}
+          {%- when 'oncampusresearch' -%}
+          {%- assign entries = site.oncampusresearch | where: 'layout','fellowship' -%}
+          
+        {%- else -%}
+          
+      {%- endcase -%}
+ 
+      {% for entry in entries %}
+      {% if entry.tags contains tag %}
+      <li class="list-group-item">
+        <a href="{{ entry.url }}">{{ entry.title }}</a>
+      </li>
+      {% endif %}
+      {% endfor %}
     </ul>
 
     <hr class="featurette-divider">
