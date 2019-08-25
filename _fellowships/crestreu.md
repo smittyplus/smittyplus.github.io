@@ -1,7 +1,7 @@
 ---
 title: CREST REU
 subtitle: University of Massachusetts - Boston
-alum: micah_olivas
+alum: Devon Lee
 img_url: '/images/umassboston.jpg'
 layout: fellowship
 info_url: 'https://www.umb.edu/crest-reu'
