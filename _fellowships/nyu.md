@@ -15,3 +15,6 @@ March 2020
 
 ## Funding
 The program basics include: Cutting edge research experience in laboratories at NYU, in the heart of Manhattan, from June 3 to August 9, 2019. Workshops in Professional Development and Research Ethics. Social activities with other summer students at NYU. Stipend of $5,000. On-campus housing arranged by the program. Reimbursement for travel to and from the REU site (up to $600).
+
+## Website
+  <p> Visit the <a href="https://nyureu.org"> {{ page.title }} site</a> for more info.</p>

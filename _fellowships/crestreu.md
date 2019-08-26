@@ -15,3 +15,6 @@ February 2020
 
 ## Funding
 Participants will receive 1) a $5000 stipend, 2) 1 round trip airfare to and from Boston, 3) transportation to and from Boston (Logan International) airport, 4) and housing in a same gender apartment (2 bedroom apartment with 2 roommates per room) for the 10 week program period.
+
+## Website
+  <p> Visit the <a href="https://www.umb.edu/crest-reu"> {{ page.title }} site</a> for more info.</p>

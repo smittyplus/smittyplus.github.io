@@ -15,3 +15,6 @@ February 2019
 
 ## Funding
 Students will receive a summer stipend and food points. On-campus housing is available and will be covered by the SURPH@Duke Fellowship, but it is not mandatory to live on-campus.
+
+## Website
+  <p> Visit the <a href="https://pharmacology.duke.edu/training/undergraduate/surph"> {{ page.title }} site</a> for more info.</p>
