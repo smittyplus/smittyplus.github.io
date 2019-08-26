@@ -34,6 +34,24 @@
         {% endfor %}
       </div>
     </div>
+
+    <div class="container-fluid mt-4">
+      <div class="row py-3 flex-nowrap" style="overflow-x: scroll; -webkit-overflow-scrolling: touch">
+        <div class="col-auto mb-3">
+          <div class="card shadow" style="width: 18rem;">
+            <img src="/images/headshots/{{ alum.name | downcase | replace: " ", ""}}.jpg" width="50" class="card-img-top" alt="{{ alum.name }}">
+            <div class="card-body">
+              <h5 class="card-title">Tester '97</h5>
+              <h6 class="card-text muted-text"> Fellow in 97 </h6>
+              <p class="card-text">testy tester</p>
+              <a href="#" class="btn btn-primary"> Contact me boi </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    
     <h4 id="list-item-5">Website</h4>
     <p>
       Visit the <a href="{{ page.info_url }}"> {{ page.title }} site</a> for more info.
