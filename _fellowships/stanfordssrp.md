@@ -1,5 +1,5 @@
 ---
-title: Stanford SSRP
+title: Stanford Amgen Scholars
 subtitle: The home of Silicon Valley's biomedical research community
 alum: micah_olivas
 img_url: '/images/stanford_campus.jpg'
@@ -8,7 +8,7 @@ info_url: 'http://biosciences.stanford.edu/current-students/diversity/programs-f
 tags: [biology]
 ---
 ## Overview
-The SSRP-Amgen Scholars Program is a fully-funded research-intensive residential program that takes place on Stanford’s beautiful campus for a nine-week period. Participants are matched with a member of Stanford’s distinguished faculty and work in one of our state-of-the-art research facilities.
+The Stanford Summer Research Program-Amgen Scholars Program is a fully-funded research-intensive residential program that takes place on Stanford’s beautiful campus for a nine-week period. Participants are matched with a member of Stanford’s distinguished faculty and work in one of our state-of-the-art research facilities.
 
 ## Deadlines
 February 2019
