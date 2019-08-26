@@ -1,5 +1,5 @@
 ---
-title: Stanford Amgen Scholars
+title: Stanford Amgen Scholars Program
 subtitle: The home of Silicon Valley's biomedical research community
 alum: micah_olivas
 img_url: '/images/stanford_campus.jpg'
