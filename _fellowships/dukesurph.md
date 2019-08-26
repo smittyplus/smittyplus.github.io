@@ -1,6 +1,6 @@
 ---
 title: Duke SURPH
-subtitle: The south will rise again
+subtitle: Investigate cancer biology and pharmacology at one of the nation's most renowned research institutes
 alum: micah_olivas
 img_url: '/images/DukeCampus.jpg'
 layout: fellowship
