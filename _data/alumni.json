@@ -2,26 +2,26 @@
     {
         "verified": "Y",
         "timestamp": "6/17/2019 18:32:05",
-        "name": "John Doe",
+        "name": "Terry Crews",
         "grad_year": 2020,
         "undergrad_research_bio": "Doing stuff",
-        "recent_headshot": "https://drive.google.com/open?id=1gSpO7oYTt-RKg3N_gwJClJLcQXntfnKE"
+        "recent_headshot": "https://drive.google.com/open?id=1sQurCnzcmXweXa45CXF5jhJbMdG7piIm"
     },
     {
         "verified": "Y",
         "timestamp": "6/17/2019 18:36:35",
         "name": "Terry Crews",
-        "grad_year": 2018,
+        "grad_year": 2020,
         "undergrad_research_bio": "Lifting and loving",
         "recent_headshot": "https://drive.google.com/open?id=1sQurCnzcmXweXa45CXF5jhJbMdG7piIm"
     },
     {
-        "verified": "y",
+        "verified": null,
         "timestamp": "6/17/2019 18:41:00",
         "name": "Testing",
         "grad_year": 2019,
         "undergrad_research_bio": "Terry Crews",
-        "recent_headshot": "https://drive.google.com/open?id=1gSpO7oYTt-RKg3N_gwJClJLcQXntfnKE"
+        "recent_headshot": "https://drive.google.com/open?id=1sQurCnzcmXweXa45CXF5jhJbMdG7piIm"
     },
     {
         "verified": null,
@@ -42,10 +42,10 @@
     {
         "verified": "Y",
         "timestamp": "6/17/2019 19:01:29",
-        "name": "fgd",
-        "grad_year": 2123,
+        "name": "Terry Crews",
+        "grad_year": 2020,
         "undergrad_research_bio": "sdfad",
-        "recent_headshot": null
+        "recent_headshot": "https://drive.google.com/open?id=1sQurCnzcmXweXa45CXF5jhJbMdG7piIm"
     },
     {
         "verified": null,

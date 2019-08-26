@@ -3,9 +3,9 @@ title: The Maddy Institute
 subtitle: Legislative Intern Scholar
 alum: micah_olivas
 img_url: '/images/DukeCampus.jpg'
-layout: fellowship
+layout: internship
 info_url: 'https://www.maddyinstitute.com'
-tags: [internships, political science]
+tags: [internships, Political Science]
 ---
 ## Overview
 Maddy institute

@@ -44,6 +44,8 @@ collections:
     output: true
     about:
     output: true
+  data:
+    output: true
 
 exclude: [/base.md]
 # Exclude from processing.
