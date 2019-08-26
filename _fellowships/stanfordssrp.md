@@ -1,6 +1,6 @@
 ---
 title: Stanford SSRP
-subtitle: Study Bioscience and Technology in the Beautiful Bay
+subtitle: The home of Silicon Valley's biomedical research community
 alum: micah_olivas
 img_url: '/images/stanford_campus.jpg'
 layout: fellowship
