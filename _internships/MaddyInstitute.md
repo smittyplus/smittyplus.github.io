@@ -5,7 +5,7 @@ alum: micah_olivas
 img_url: '/images/DukeCampus.jpg'
 layout: internship
 info_url: 'https://www.maddyinstitute.com'
-tags: [internships, political science]
+tags: [internships, Political science]
 ---
 ## Overview
 Maddy institute
