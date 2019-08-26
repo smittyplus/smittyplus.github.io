@@ -24,9 +24,9 @@
           <div class="card shadow" style="width: 18rem;">
             <img src="/images/headshots/{{ alum.name | downcase | replace: " ", ""}}.jpg" width="50" class="card-img-top" alt="{{ alum.name }}">
             <div class="card-body">
-              <h5 class="card-title">{{ alum.name }} '{{ alum.grad_year | modulo: 100}}</h5>
+              <h5 class="card-title">{{ alum.name }} '{{ grad_year | modulo: 100}}</h5>
               <h6 class="card-text muted-text"> Fellow in {{ alum.fellowship_year }} </h6>
-              <p class="card-text">{{ alum.flw_1_bio }}</p>
+              <p class="card-text">{{ undergrad_research_bio }}</p>
               <a href="#" class="btn btn-primary"> Contact {{ alum.first_name }} </a>
             </div>
           </div>
