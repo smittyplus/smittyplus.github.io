@@ -4,7 +4,7 @@ subtitle: Investigate cancer biology and pharmacology at one of the nation's mos
 alum: micah_olivas
 img_url: '/images/DukeCampus.jpg'
 layout: fellowship
-info_url: 'https://nyureu.org'
+info_url: 'https://pharmacology.duke.edu/training/undergraduate/surph'
 tags: [biology]
 ---
 ## Overview
