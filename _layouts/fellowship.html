@@ -16,27 +16,21 @@
     <H2 class="text-muted py-2">{{ page.subtitle }}</H2>
     {{ page.content }}
     <h4 id="list-item-4">SFHC Alumni</h4>
-    <div class="">
-
-    </div>
     <div class="container-fluid mt-4">
-      <div class="row py-3 flex-nowrap" style="overflow-x: scroll; -webkit-overflow-scrolling: touch">
-        {% assign alums = site.data.alumni | where: "verified","Y" %}
-        {% for alum in alums %}
+      <div class="row py-3 flex-nowrap" style="overflow-x: scroll">
         <div class="col-auto mb-3">
           <div class="card shadow" style="width: 18rem;">
-            <img src="/images/terrycrews.jpg" width="50" class="card-img-top" alt="{{ alum.name }}">
+            <img src="/images/headshots/terrycrews.jpg" width="50" class="card-img-top">
             <div class="card-body">
               <h5 class="card-title">Terry Crews</h5>
-              <h6 class="card-text muted-text"> Fellow in {{ alum.fellowship_year }} </h6>
+              <h6 class="card-text muted-text"> Fellow in 2019. </h6>
               <p class="card-text">Lifting and Loving</p>
-              <a href="#" class="btn btn-primary"> Contact {{ alum.first_name }} </a>
+              <a href="#" class="btn btn-primary"> Contact </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    {% endfor %}
 
   </div>
   {% include footer.html %}
