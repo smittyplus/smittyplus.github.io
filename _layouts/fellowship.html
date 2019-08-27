@@ -25,11 +25,11 @@
         {% for alum in alums %}
         <div class="col-auto mb-3">
           <div class="card shadow" style="width: 18rem;">
-            <img src="/images/headshots/{{ alum.name | downcase | replace: " ", ""}}.jpg" width="50" class="card-img-top" alt="{{ alum.name }}">
+            <img src="/images/terrycrews.jpg" width="50" class="card-img-top" alt="{{ alum.name }}">
             <div class="card-body">
-              <h5 class="card-title">{{ alum.name }} '{{ grad_year | modulo: 100}}</h5>
+              <h5 class="card-title">Terry Crews</h5>
               <h6 class="card-text muted-text"> Fellow in {{ alum.fellowship_year }} </h6>
-              <p class="card-text">{{ undergrad_research_bio }}</p>
+              <p class="card-text">Lifting and Loving</p>
               <a href="#" class="btn btn-primary"> Contact {{ alum.first_name }} </a>
             </div>
           </div>
